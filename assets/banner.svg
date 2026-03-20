@@ -1,0 +1,60 @@
+<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* 1. 背景颜色：参考海报暗色区域 */
+    .bg { fill: #0d1117; }
+
+    /* 2. 数码雨：使用海报中的淡蓝色调 */
+    .matrix-text {
+      font-family: 'Courier New', monospace;
+      fill: #58a6ff; /* 参考海报中的链接/图标蓝色 */
+      font-size: 12px;
+      opacity: 0.3; /* 背景雨保持半透明，不干扰标题 */
+    }
+
+    @keyframes drop {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(300px); }
+    }
+
+    /* 3. Vesti 主标题样式：使用 Stroke (描边) 效果 */
+    .title-stroke {
+      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      font-size: 80px;
+      fill: none; /* 内部透明 */
+      stroke: #58a6ff; /* 描边颜色 */
+      stroke-width: 2px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+    }
+
+    /* 4. 副标题样式 */
+    .subtitle {
+      font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      fill: #8b949e; /* 辅助文字灰色 */
+      font-size: 18px;
+      letter-spacing: 4px;
+    }
+
+    .rain-col { animation: drop infinite linear; }
+  </style>
+
+  <rect width="100%" height="100%" class="bg" />
+
+  <g class="matrix-text">
+    <text x="10%" y="0" class="rain-col" style="animation-duration: 6s; animation-delay: 0s;">CAPTURE 捕获 0101</text>
+    <text x="25%" y="0" class="rain-col" style="animation-duration: 4s; animation-delay: 1s;">SEARCH 检索 RAG</text>
+    <text x="40%" y="0" class="rain-col" style="animation-duration: 7s; animation-delay: 0.5s;">NETWORK 图谱</text>
+    <text x="55%" y="0" class="rain-col" style="animation-duration: 5s; animation-delay: 2s;">PRIVACY 隐私 Local</text>
+    <text x="70%" y="0" class="rain-col" style="animation-duration: 8s; animation-delay: 1.5s;">Vesti AI Memory</text>
+    <text x="85%" y="0" class="rain-col" style="animation-duration: 6s; animation-delay: 3s;">Vector DB IndexedDB</text>
+  </g>
+
+  <g transform="translate(400, 150)">
+    <text text-anchor="middle" class="title-stroke">VESTI</text>
+  </g>
+
+  <g transform="translate(400, 210)">
+    <text text-anchor="middle" class="subtitle">让思维有迹可循 · LOCAL FIRST AI</text>
+  </g>
+</svg>
