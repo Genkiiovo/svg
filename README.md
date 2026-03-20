@@ -3,3 +3,9 @@
 
 
 ![Header](https://capsule-render.vercel.app/api?type=rect&color=000&height=150&text=My+Project&fontSize=70&fontColor=fff&animation=matrix)
+
+
+
+<p align="center">
+  <img src="./assets/banner.svg" alt="Vesti Banner" width="800">
+</p>
